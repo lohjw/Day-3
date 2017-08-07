@@ -23,15 +23,73 @@ namespace Day_3
             Console.WriteLine(factorial);
             */
 
+            /* Question 1b
             Console.WriteLine("Please enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
             int factorial = 1;
 
-            for (int i = number; i == 1; i--)
+            for (int i = number; i >= 1; i--)
             {
                 factorial = factorial * i;
             }
             Console.WriteLine(factorial);
+            */
+
+            /* Question 2
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("{0} {1:0.0##} {2:0.0###} {3}", i, 1.0/i, Math.Sqrt(i), i*i);
+            }
+            */
+
+            /* Question 3
+            Console.Write("Please enter a number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            int k = 0;
+
+            for (int i = 1; i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    k++;
+                }
+            }
+            if (k == 2)
+            {
+                Console.WriteLine("Prime");
+            }
+            else
+            {
+                Console.WriteLine("Not prime");
+            }
+            */
+
+            /* Question 4
+            int number, sum = 0, n;
+            Console.Write("Enter the Number: ");
+            number = int.Parse(Console.ReadLine());
+            n = number;
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            if (sum == n)
+            {
+                Console.WriteLine("Entered number is a perfect number");
+            }
+            else
+            {
+                Console.WriteLine("Entered number is not a perfect number");
+            }
+            */
+
+            // Question 5 
+
+            // Question 6
+
 
         }
     }
