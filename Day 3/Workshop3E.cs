@@ -65,7 +65,9 @@ namespace Day_3
             */
 
             /* Question 4
-            int number, sum = 0, n;
+            int number;
+            int sum = 0;
+            int n;
             Console.Write("Enter the Number: ");
             number = int.Parse(Console.ReadLine());
             n = number;
@@ -86,9 +88,55 @@ namespace Day_3
             }
             */
 
-            // Question 5 
+            /* Question 5 
 
-            // Question 6
+            int i = 1;
+            int j = 1;
+
+            for (i = 5; i <= 10000; i++)
+            {
+                int k = 0;
+
+                for (j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        k++;
+                    }
+                }
+                if (k == 2)
+                {
+                    Console.WriteLine(i);
+                }
+
+            }
+            */
+
+            /* Question 6
+
+            int i;
+            int j;
+
+            for (i = 1; i <= 1000; i++)
+            {
+                int sum = 0;
+
+                for (j = 1; j < i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        sum = sum + j;
+                    }
+                }
+
+                if (sum == i)
+                {
+                    Console.WriteLine(i);
+                }
+
+            }
+            */
+
 
 
         }

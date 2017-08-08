@@ -159,9 +159,6 @@ namespace Day_3
             Console.WriteLine(G);
             */
 
-
-
-
         }
     }
 }
